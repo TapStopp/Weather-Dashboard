@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="{% static 'css/global.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+</head>
+<body>
+  <div class="splash">
+    <img src="{% static 'images/splash-bg.jpg' %}" alt="background" class="bg-img">
+    <div class="splash-content">
+      <h1>Weather App</h1>
+      <p id="continueMessage">Press the spacebar to continue</p>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.code === 'Space') {
+        window.location.href = "{% url 'login' %}";
+      }
+    });
+  </script>
+</body>
+</html>

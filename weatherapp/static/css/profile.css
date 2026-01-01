@@ -1,0 +1,32 @@
+#profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  margin: 30px auto;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 20px auto;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #555;
+}

@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-menu li {
+  cursor: pointer;
+}
+
+.nav-menu li.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
